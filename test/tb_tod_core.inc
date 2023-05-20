@@ -21,7 +21,7 @@ end
 initial
 begin
     set_offset_time = 1'b0;
-    forever @ (posedge clk) set_offset_time <= $random;
+    forever @ (posedge clk) std::randomize(set_offset_time) with { set_offset_time dist { 0 := 9, 1 := 1 }; };
 end
 
 initial
