@@ -1,1 +1,1 @@
-Time of Date RTL coding exercise
+Time of Day RTL coding exercise
